@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Link Example</title>
+    <style>
+        .container {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        li:last-child {
+            margin-right: 0;
+        }
+        
+        .separator {
+            margin: 0 5px;
+        }
+    </style>
+    <script>
+        function openLink(target) {
+            window.open(target, '_blank');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p>Click any of the following links:</p>
+        <ul>
+            <li><a href="#" onclick="openLink('https://example.com');" target="_blank">Opens in New</a></li>
+            <li class="separator">|</li>
+            <li><a href="#" onclick="openLink('https://example.com');" target="_self">Opens in Self</a></li>
+            <li class="separator">|</li>
+            <li><a href="#" onclick="openLink('https://example.com');" target="_parent">Opens in Parent</a></li>
+            <li class="separator">|</li>
+            <li><a href="#" onclick="openLink('https://example.com');">Opens in Body</a></li>
+        </ul>
+    </div>
+</body>
+</html>
